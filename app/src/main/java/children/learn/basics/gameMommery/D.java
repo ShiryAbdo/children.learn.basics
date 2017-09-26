@@ -35,9 +35,9 @@ public class D {
         for( int i = 0; i < range; ++i)
         {
             myImgCount = random.nextInt(range);
-            if(!aimalArray.contains(arraImagRtage[myImgCount])){
+//            if(!aimalArray.contains(arraImagRtage[myImgCount])){
                 aimalArray.add(arraImagRtage[myImgCount]);
-            }
+//            }
         }
 
         return aimalArray;

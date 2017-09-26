@@ -5,41 +5,45 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
-    android:layout_gravity="center"
-    tools:context="children.learn.basics.MainActivity">
+     tools:context="children.learn.basics.MainActivity"
+    android:orientation="vertical">
 
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hello World!"
         android:gravity="center"
-        android:id="@+id/image"
         android:layout_gravity="top|center"
-        android:src="@drawable/ic_launcher" />
+        android:id="@+id/image"
+        android:layout_marginBottom="100dp"
+         android:src="@drawable/ic_launcher" />
     <LinearLayout
-        android:layout_margin="20dp"
-        android:layout_gravity="bottom|center"
+        android:layout_marginTop="100dp"
+         android:layout_gravity="bottom|center"
         android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <TextView
-            android:id="@+id/anserOne"
+             android:id="@+id/anserOne"
             android:text="Hello World!"
             android:layout_weight="1"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content" />
         <TextView
             android:id="@+id/anderTwo"
             android:layout_weight="1"
             android:text="Hello World!"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content" />
         <TextView
             android:id="@+id/anserthree"
             android:layout_weight="1"
             android:text="Hello World!"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content" />
     </LinearLayout>
 

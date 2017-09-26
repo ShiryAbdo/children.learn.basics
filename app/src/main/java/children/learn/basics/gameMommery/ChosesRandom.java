@@ -9,7 +9,7 @@ import java.util.Random;
 
 public class ChosesRandom {
     ArrayList<String>ArrayRandom = new ArrayList<>();
-    String [] randomString = {"Barn Owl","Dolphin","donkey"};
+    String [] randomString = {"kkk","hh","gg"};
     int range = randomString.length;
     int myImgCount = 0;
 
@@ -26,8 +26,23 @@ public class ChosesRandom {
             }
         }
 
+
+
+        if(ArrayRandom.size()<4){
+            for( int i = 0; i < range; ++i)
+            {
+                myImgCount = random.nextInt(range);
+                if(!ArrayRandom.contains(randomString[myImgCount])){
+                    ArrayRandom.add(randomString[myImgCount]);
+                }
+            }
+
+        }
+
         return ArrayRandom;
     }
+
+
 
 
 }
